@@ -648,6 +648,77 @@
             .contact-card {
                 padding: 2rem;
             }
+
+
+            /* Timeline Section */
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 20px;
+  border-left: 2px solid rgba(147, 51, 234, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #9333ea, #ec4899);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  border-color: rgba(147, 51, 234, 0.6);
+}
+
+.timeline-content h4 {
+  color: #9333ea;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 15px;
+  }
+  .timeline-item {
+    padding-left: 30px;
+  }
+  .timeline-dot {
+    left: -8px;
+  }
+}
+
         }
     </style>
 </head>
@@ -810,6 +881,67 @@
         </div>
     </section>
 
+    <!-- Timeline Section -->
+<section class="section timeline-section" id="timeline">
+  <div class="container">
+    <h2 class="section-title gradient-text" data-aos="fade-up">My Journey</h2>
+    <div class="timeline">
+
+      <!-- 2019 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <h4>2019</h4>
+          <h5>Tata DAV Public School, Sonadih - Class 10th</h5>
+          <p>Successfully completed secondary education with 75%.</p>
+        </div>
+      </div>
+
+      <!-- 2021 Class 12 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <h4>2021</h4>
+          <h5>Sardana International School - Class 12th</h5>
+          <p>Certified with Class XII, securing 85%.</p>
+        </div>
+      </div>
+
+      <!-- 2021 VIT Admission -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <h4>2021</h4>
+          <h5>VIT Bhopal - B.Tech (CSE)</h5>
+          <p>Secured admission in Computer Science and Engineering via VITEEE.</p>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <h4>2024</h4>
+          <h5>Early Roles</h5>
+          <p>Explored 3D Animation and Frontend Development through projects.</p>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <h4>2025</h4>
+          <h5>Building the Future</h5>
+          <p>Focused on becoming a Full Stack Developer and creating impactful digital experiences.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     <!-- Projects Section -->
     <section class="section projects-section" id="projects">
         <div class="container">
@@ -855,6 +987,36 @@
                             <h4 class="mb-3">Portfolio</h4>
                             <p class="text-muted mb-3"></p>
                             <a href="#" class="text-decoration-none">
+                                <i class="fas fa-external-link-alt me-2"></i>View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            🌐
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">React Developer</div>
+                            <h4 class="mb-3">Camelot Global</h4>
+                            <p class="text-muted mb-3"></p>
+                            <a href="https://camelotglobal.netlify.app/" class="text-decoration-none">
+                                <i class="fas fa-external-link-alt me-2"></i>View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            🌐
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">Front End Developer</div>
+                            <h4 class="mb-3">South Garage</h4>
+                            <p class="text-muted mb-3"></p>
+                            <a href="https://southgarage.netlify.app/" class="text-decoration-none">
                                 <i class="fas fa-external-link-alt me-2"></i>View Project
                             </a>
                         </div>
@@ -941,4 +1103,3 @@
 </body>
 
 </html>
-
